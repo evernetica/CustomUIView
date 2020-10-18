@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/colorDarkBlack"
+    android:minWidth="384px"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20px"
+        android:layout_weight="1"
+        android:fontFamily="@font/rajdhani_bold"
+        android:maxLines="1"
+        android:text="Levels"
+        android:textColor="@android:color/white"
+        android:textSize="28px" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/stateImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="28px"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_collapsed" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

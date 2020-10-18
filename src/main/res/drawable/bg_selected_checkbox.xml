@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:endColor="#012300"
+                android:startColor="#77BC1F"
+                android:type="linear" />
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:width="36.5px"
+        android:height="26.5px"
+        android:drawable="@drawable/ic_checkbox" />
+</layer-list>

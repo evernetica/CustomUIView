@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightGrey">#8E8E8E</color>
+    <color name="colorGrey">#6D6D6D</color>
+    <color name="colorDarkGrey">#454545</color>
+    <color name="colorLightBlack">#272727</color>
+    <color name="colorBlack">#1D1D1D</color>
+    <color name="colorDarkBlack">#121212</color>
+    <color name="colorGreen">#77BC1F</color>
+    <color name="progress_line">#33FF00</color>
+    <color name="default_text_color">#FFFFFF</color>
+    <color name="default_background_color">#00000000</color>
+    <color name="default_outer_bar_color">#77BC1F</color>
+    <color name="default_inner_bar_color">#1E6705</color>
+    <color name="color_arc">@android:color/transparent</color>
+    <color name="color_text">@android:color/transparent</color>
+    <color name="color_progress">@android:color/transparent</color>
+</resources>

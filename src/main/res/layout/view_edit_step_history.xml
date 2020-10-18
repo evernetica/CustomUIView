@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#1D1D1D">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginStart="22px"
+        android:layout_marginTop="8px"
+        android:minWidth="156px"
+        android:layout_marginBottom="8px"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/firstLine"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="4px"
+            android:layout_weight="1"
+            android:fontFamily="@font/rajdhani_medium"
+            android:textColor="#77BC1F"
+            android:textSize="24px"
+            tools:text="Line 1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/secondLine"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4px"
+            android:layout_weight="1"
+            android:fontFamily="@font/rajdhani_medium"
+            android:textColor="#77BC1F"
+            android:textSize="24px"
+            tools:text="Line 2" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/previousText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:minWidth="88px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/rajdhani_semibold"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="#8E8E8E"
+        android:textSize="24px"
+        tools:text="-9" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/newText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:minWidth="88px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9px"
+        android:layout_marginTop="8px"
+        android:layout_marginBottom="8px"
+        android:fontFamily="@font/rajdhani_semibold"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="24px"
+        tools:text="12" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

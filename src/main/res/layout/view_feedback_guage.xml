@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerView"
+    android:layout_width="384px"
+    android:layout_height="143px"
+    android:background="@color/colorBlack"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleWidget"
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:layout_marginStart="19px"
+        android:layout_marginTop="21px"
+        android:fontFamily="@font/rajdhani_medium"
+        android:gravity="bottom"
+        android:paddingEnd="0dp"
+        android:text="AMPS"
+        android:textAllCaps="true"
+        android:textColor="#77BC1F"
+        android:textSize="28px"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="54dp">
+
+        <ProgressBar
+            android:id="@+id/progress_horizontal"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="212px"
+            android:layout_height="32px"
+            android:layout_marginStart="1px"
+            android:layout_marginEnd="1px"
+            android:layout_marginBottom="2px"
+            android:max="200"
+            android:min="0"
+            android:progress="150"
+            android:progressDrawable="@drawable/progressbar_rounded_corner"
+            app:layout_constraintBottom_toBottomOf="@id/temperatureSeekBarShadow"
+            app:layout_constraintEnd_toEndOf="@+id/temperatureSeekBarShadow"
+            app:layout_constraintHeight_max="100px"
+            app:layout_constraintStart_toStartOf="@+id/temperatureSeekBarShadow"
+            app:layout_constraintTop_toTopOf="@+id/temperatureSeekBarShadow" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24px"
+            android:layout_marginTop="15px"
+            android:layout_marginBottom="20px"
+            android:background="#6D6D6D"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/valueAmp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/valueAmp"
+            android:layout_width="wrap_content"
+            android:layout_height="56px"
+            android:layout_marginStart="24px"
+            android:fontFamily="@font/rajdhani_medium"
+            android:textColor="@android:color/white"
+            android:textSize="44px"
+            app:layout_constraintBottom_toTopOf="@+id/format"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.49"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="23" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/format"
+            android:layout_width="wrap_content"
+            android:layout_height="31px"
+            android:layout_marginStart="24px"
+            android:layout_marginBottom="16px"
+            android:fontFamily="@font/rajdhani_medium"
+            android:text="AMP"
+            android:textColor="#8E8E8E"
+            android:textSize="24px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/valueAmp"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/maxValue"
+            android:layout_width="37px"
+            android:layout_height="26px"
+            android:layout_marginBottom="5px"
+            android:fontFamily="@font/rajdhani_bold"
+            android:text="200"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:textSize="20px"
+            app:layout_constraintBottom_toTopOf="@+id/temperatureSeekBarShadow"
+            app:layout_constraintEnd_toEndOf="@+id/temperatureSeekBarShadow"
+            app:layout_constraintTop_toTopOf="@+id/separator"
+            app:layout_constraintVertical_bias="1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/minValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8px"
+            android:layout_marginBottom="5px"
+            android:fontFamily="@font/rajdhani_bold"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="20px"
+            app:layout_constraintBottom_toTopOf="@+id/temperatureSeekBarShadow"
+            app:layout_constraintStart_toStartOf="@+id/temperatureSeekBarShadow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+        <app.developer.uiview.common.RoundedCornerLayout
+            android:id="@+id/temperatureSeekBarShadow"
+            android:layout_width="216px"
+            android:layout_height="36px"
+            android:layout_marginStart="24px"
+            android:layout_marginEnd="24px"
+            android:layout_marginBottom="24px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="100px"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/separator"
+            app:layout_constraintTop_toBottomOf="@+id/minValue"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintWidth_min="216px" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

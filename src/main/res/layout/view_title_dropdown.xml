@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_title_dropdown"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/leftImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:paddingStart="30px"
+        android:paddingTop="16px"
+        android:paddingEnd="22px"
+        android:paddingBottom="16px"
+        android:src="@drawable/ic_drop_down_left"
+        android:visibility="gone"
+        tools:ignore="RtlSymmetry" />
+
+    <View
+        android:id="@+id/leftDivider"
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/rajdhani_bold"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="24px"
+        tools:ignore="RtlSymmetry"
+        tools:text="Orbital weld" />
+
+    <View
+        android:id="@+id/rightDivider"
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/rightImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:paddingStart="20px"
+        android:paddingTop="16px"
+        android:paddingEnd="20px"
+        android:paddingBottom="16px"
+        android:src="@drawable/ic_drop_down_up"
+        tools:ignore="RtlSymmetry" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/switchBackground"
+        android:layout_width="178px"
+        android:layout_height="72px"
+        android:layout_marginStart="20px"
+        android:layout_marginTop="19px"
+        android:layout_marginEnd="20px"
+        android:background="@drawable/bg_track_active"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/headerText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/headerText"
+        app:layout_constraintTop_toBottomOf="@+id/headerText" />
+
+    <Switch
+        android:id="@+id/switchView"
+        android:layout_width="178px"
+        android:layout_height="72px"
+        android:checked="false"
+        android:switchMinWidth="172px"
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/switch_track"
+        app:layout_constraintBottom_toBottomOf="@+id/switchBackground"
+        app:layout_constraintEnd_toEndOf="@+id/switchBackground"
+        app:layout_constraintStart_toStartOf="@+id/switchBackground"
+        app:layout_constraintTop_toTopOf="@+id/switchBackground" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/activeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8px"
+        android:layout_marginEnd="103px"
+        android:ellipsize="end"
+        android:fontFamily="@font/rajdhani_bold"
+        android:gravity="end"
+        android:maxLines="1"
+        android:text="on"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="22px"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/switchBackground"
+        app:layout_constraintEnd_toEndOf="@id/switchBackground"
+        app:layout_constraintStart_toStartOf="@+id/switchBackground"
+        app:layout_constraintTop_toTopOf="@id/switchBackground" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/inactiveText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103px"
+        android:layout_marginEnd="8px"
+        android:ellipsize="end"
+        android:fontFamily="@font/rajdhani_bold"
+        android:gravity="start"
+        android:maxLines="1"
+        android:text="off"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="22px"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/switchBackground"
+        app:layout_constraintEnd_toEndOf="@id/switchBackground"
+        app:layout_constraintStart_toStartOf="@+id/switchBackground"
+        app:layout_constraintTop_toTopOf="@id/switchBackground" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rajdhani_medium"
+        android:gravity="center"
+        android:minWidth="211px"
+        android:minHeight="36px"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="28px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Save log always" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120px"
+    android:background="#272727"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="107px"
+        android:layout_height="72px"
+        android:layout_margin="24px"
+        android:src="@drawable/label_mk_products_small" />
+
+    <app.developer.uiview.drop_down.TitleDropdownView
+        android:id="@+id/tdvOrbitalWeld"
+        android:layout_width="304px"
+        android:layout_height="match_parent"
+        android:textSize="28px"
+        android:gravity="center"
+        app:dividerColor="@color/colorDarkBlack"
+        app:text="Orbital Weld"
+        app:visibilityLeftDivider="true"
+        app:visibilityRightDivider="true" />
+
+    <app.developer.uiview.drop_down.TitleDropdownView
+        android:id="@+id/tdvProcedure"
+        android:layout_width="304px"
+        android:layout_height="match_parent"
+        app:dividerColor="@color/colorDarkBlack"
+        app:text="Procedure"
+        android:gravity="center"
+        app:visibilityLeftDivider="true"
+        app:visibilityRightDivider="true" />
+
+    <app.developer.uiview.drop_down.TitleDropdownView
+        android:id="@+id/tdvLog"
+        android:layout_width="304px"
+        android:layout_height="match_parent"
+        android:textSize="28px"
+        app:dividerColor="@color/colorDarkBlack"
+        android:gravity="center"
+        app:text="Log"
+        app:visibilityLeftDivider="true"
+        app:visibilityRightDivider="true" />
+
+    <app.developer.uiview.drop_down.TitleDropdownView
+        android:id="@+id/tdvSettings"
+        android:layout_width="228px"
+        android:layout_height="match_parent"
+        android:textSize="28px"
+        app:dividerColor="@color/colorDarkBlack"
+        app:state="none"
+        android:gravity="center"
+        app:text="Settings"
+        app:visibilityLeftDivider="true"
+        app:visibilityRightDivider="true" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="404px"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/civAvatar"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:src="@drawable/ic_user_avatar_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/rajdhani_semibold"
+            android:text="Bob Weldman"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="28px"
+            app:layout_constraintBottom_toTopOf="@+id/tvRole"
+            app:layout_constraintStart_toEndOf="@+id/civAvatar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/rajdhani_semibold"
+            android:text="Administrator"
+            android:textColor="@color/colorWhite"
+            android:textSize="24px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/civAvatar"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkBlack" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDate"
+        android:layout_width="216px"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/rajdhani_bold"
+        android:gravity="center"
+        android:paddingHorizontal="16px"
+        android:paddingVertical="30px"
+        android:textColor="@color/colorGreen"
+        android:textSize="24px" />
+</LinearLayout>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="indicatorsColor" format="color" />
+    <attr name="selectedIndicatorColor" format="color" />
+    <attr name="indicatorSize" format="dimension" />
+    <attr name="indicatorsWidthFactor" format="float" />
+    <attr name="indicatorsSpacing" format="dimension" />
+    <attr name="indicatorsCornerRadius" format="dimension" />
+    <attr name="stiffness" format="float" />
+    <attr name="dampingRatio" format="float" />
+    <attr name="progressMode" format="boolean" />
+    <attr name="radiusCorners" format="float" />
+    <attr name="text" format="string" />
+    <attr name="textColor" format="color" />
+    <attr name="textFontFamily" format="reference" />
+    <attr name="textSize" format="dimension" />
+    <attr name="headerText" format="string" />
+    <attr name="headerTextColor" format="color" />
+    <attr name="headerFontFamily" format="reference" />
+    <attr name="headerTextSize" format="dimension" />
+    <attr name="valueTextSize" format="dimension" />
+    <attr name="valueFontFamily" format="reference" />
+    <attr name="valueTextColor" format="color" />
+    <attr name="imageTint" format="color" />
+    <attr name="dividerColor" format="color" />
+    <attr name="disableTextColor" format="color" />
+    <attr name="drawable" format="reference" />
+    <attr name="firstLineText" format="string" />
+    <attr name="firstLineTextColor" format="color" />
+    <attr name="firstLineFontFamily" format="reference" />
+    <attr name="secondLineText" format="string" />
+    <attr name="secondLineTextColor" format="color" />
+    <attr name="secondLineFontFamily" format="reference" />
+    <attr name="firstLineTextSize" format="dimension" />
+    <attr name="secondLineTextSize" format="dimension" />
+
+    <attr name="type" format="enum">
+        <enum name="normal" value="0" />
+        <enum name="active" value="1" />
+        <enum name="disable" value="2" />
+        <enum name="stop" value="3" />
+    </attr>
+
+
+    <declare-styleable name="PaginationIndicator">
+        <attr name="indicatorsColor" />
+        <attr name="selectedIndicatorColor" />
+        <attr name="indicatorSize" />
+        <attr name="indicatorsWidthFactor" />
+        <attr name="indicatorsSpacing" />
+        <attr name="indicatorsCornerRadius" />
+        <attr name="progressMode" />
+    </declare-styleable>
+
+    <declare-styleable name="FeedbackTemperatureView">
+        <attr name="widgetBackground" format="color" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="titleText" format="string" />
+        <attr name="android:fontFamily" />
+        <attr name="progressBar" format="integer" />
+        <attr name="minBar" format="integer" />
+        <attr name="maxBar" format="integer" />
+        <attr name="temperatureFormat" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="FeedbackGaugeView">
+        <attr name="titleWidget" format="string" />
+        <attr name="minProgress" format="integer" />
+        <attr name="maxProgress" format="integer" />
+        <attr name="defaultProgress" format="integer" />
+        <attr name="android:fontFamily" />
+    </declare-styleable>
+
+    <declare-styleable name="IncrementingInputView">
+        <attr name="android:background" />
+        <attr name="imageIncremental" format="reference" />
+        <attr name="imageDecremental" format="reference" />
+        <attr name="valueTextSize" />
+        <attr name="minMaxTextSize" format="dimension" />
+        <attr name="setIncrementSteps" format="float" />
+        <attr name="setDefaultValue" format="float" />
+        <attr name="setMin" format="integer" />
+        <attr name="setMax" format="integer" />
+
+        <attr name="imageTint" />
+        <attr name="indicatorIncremental" format="reference" />
+        <attr name="indicatorDecremental" format="reference" />
+        <attr name="shadowColorValueView" format="color" />
+        <attr name="backgroundColorValueView" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundButton">
+        <attr name="android:layout_width" />
+        <attr name="android:layout_height" />
+        <attr name="android:background" />
+        <attr name="image" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EditStepHistoryView">
+        <!-- region First Line -->
+        <attr name="firstLineText" />
+        <attr name="firstLineTextColor" />
+        <attr name="firstLineFontFamily" />
+        <!-- endregion -->
+
+        <!-- region Second Line -->
+        <attr name="secondLineText" />
+        <attr name="secondLineTextColor" />
+        <attr name="secondLineFontFamily" />
+        <!-- endregion -->
+
+        <!-- region Previous -->
+        <attr name="previousText" format="string" />
+        <attr name="previousTextColor" format="color" />
+        <attr name="previousFontFamily" format="reference" />
+        <!-- endregion -->
+
+        <!-- region New -->
+        <attr name="newText" format="string" />
+        <attr name="newTextColor" format="color" />
+        <attr name="newFontFamily" format="reference" />
+        <!-- endregion -->
+    </declare-styleable>
+
+
+    <declare-styleable name="ParameterTextEntryView">
+        <!-- region Header -->
+        <attr name="headerText" />
+        <attr name="headerTextColor" />
+        <attr name="headerTextSize" />
+        <attr name="headerFontFamily" />
+        <attr name="android:inputType" />
+        <attr name="android:imeOptions" />
+
+        <attr name="fieldMarginTop" format="dimension" />
+        <attr name="fieldMarginBottom" format="dimension" />
+        <attr name="fieldMarginStart" format="dimension" />
+        <attr name="fieldMarginEnd" format="dimension" />
+        <!-- endregion -->
+
+        <!-- region Value -->
+        <attr name="valueText" format="string" />
+        <attr name="valueTextColor" />
+        <attr name="valueTextSize" />
+        <attr name="valueFontFamily" />
+        <!-- endregion -->
+
+        <attr name="valueContainerDrawable" format="integer" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ParameterContentBlockView">
+        <!-- region Header -->
+        <attr name="textHeader" format="string" />
+        <attr name="headerFontFamily" />
+        <attr name="headerTextSize" />
+        <attr name="headerTextColor" />
+        <!-- endregion -->
+
+        <!-- region Description -->
+        <attr name="textFirstDescription" format="string" />
+        <attr name="textSecondDescription" format="string" />
+        <attr name="descriptionFontFamily" format="reference" />
+        <attr name="descriptionTextSize" format="dimension" />
+        <attr name="descriptionTextColor" format="color" />
+        <!-- endregion -->
+
+        <!-- region Value -->
+        <attr name="textFirstValue" format="string" />
+        <attr name="textSecondValue" format="string" />
+        <attr name="valueFontFamily" />
+        <attr name="valueTextSize" />
+        <attr name="valueTextColor" />
+        <!-- endregion -->
+    </declare-styleable>
+
+
+    <declare-styleable name="MultilineWeldheadButton">
+        <attr name="firstLineText" />
+        <attr name="secondLineText" />
+        <attr name="firstLineTextColor" />
+        <attr name="secondLineTextColor" />
+        <attr name="firstLineFontFamily" />
+        <attr name="secondLineFontFamily" />
+        <attr name="secondLineTextSize" />
+        <attr name="firstLineTextSize" />
+        <attr name="dividerColor" />
+        <attr name="disableTextColor" />
+
+        <attr name="radiusCorners" />
+
+        <attr name="drawable" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleDropdownView">
+        <attr name="text" />
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="textFontFamily" />
+        <attr name="titleMarginStart" format="dimension" />
+        <attr name="titleMarginEnd" format="dimension" />
+        <attr name="android:gravity" />
+        <attr name="arrowColor" format="color" />
+        <attr name="radiusCorners" />
+        <attr name="dropDownRadiusCorners" format="float" />
+        <attr name="dividerColor" />
+        <attr name="visibilityRightDivider" format="boolean" />
+        <attr name="visibilityLeftDivider" format="boolean" />
+        <attr name="sides" format="boolean" />
+        <attr name="android:background" />
+        <attr name="state" format="enum">
+            <enum name="drop_down" value="0" />
+            <enum name="expand_down" value="1" />
+            <enum name="expand_up" value="2" />
+            <enum name="none" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundedTitleDropdownView">
+        <attr name="text" />
+        <attr name="textColor" />
+        <attr name="fontFamily" />
+        <attr name="textSize" />
+        <attr name="android:gravity" />
+        <attr name="background" />
+        <attr name="headerTitleText" format="string" />
+        <attr name="headerPaddingText" format="dimension" />
+        <attr name="viewState" format="enum">
+            <enum name="drop_down" value="0" />
+            <enum name="expand_down" value="1" />
+            <enum name="expand_up" value="2" />
+            <enum name="none" value="3" />
+        </attr>
+        <attr name="containerWidth" format="dimension" />/>
+    </declare-styleable>
+
+    <declare-styleable name="NavigationBarView">
+        <attr name="barBackground" format="color" />
+        <attr name="barTextColor" format="color" />
+        <attr name="barTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ModeView"></declare-styleable>
+
+    <declare-styleable name="SwipeableRecyclerView">
+        <attr name="maxVisibleItemsCount" format="integer" />
+        <attr name="dotRadius" format="integer" />
+        <attr name="selectableDotColor" format="color" />
+        <attr name="regularDotColor" format="color" />
+        <attr name="dotViewVerticalPadding" format="dimension" />
+        <attr name="recyclerViewHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="DropdownView">
+        <attr name="text" />
+        <attr name="textColor" />
+        <attr name="textFontFamily" />
+        <attr name="android:textSize" />
+        <attr name="imageTint" />
+        <attr name="textCaps" format="boolean" />
+        <attr name="collapsedImage" format="reference" />
+        <attr name="expandedImage" format="reference" />
+        <attr name="stateDropDown" format="enum">
+            <enum name="collapsed" value="0" />
+            <enum name="expanded" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="WeldheadButton">
+        <!-- region view divider -->
+        <attr name="android:layout_width" />
+        <attr name="android:layout_height" />
+        <attr name="android:text" />
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+        <attr name="disableTextColor" />
+        <!-- endregion -->
+
+        <!-- region general -->
+        <attr name="radiusCorners" />
+        <attr name="android:fontFamily" />
+        <attr name="drawable" />
+        <attr name="type" />
+        <!-- endregion -->
+    </declare-styleable>
+
+    <declare-styleable name="SectionTitleView">
+        <attr name="android:text" />
+        <attr name="radiusCorners" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="topBorderColor" format="color" />
+        <attr name="topBorderWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ParameterToggleView">
+
+        <!-- region Header -->
+        <attr name="headerText" />
+        <attr name="headerFontFamily" />
+        <attr name="headerTextSize" />
+        <!-- endregion -->
+
+        <!-- region Switch -->
+        <attr name="activeText" format="string" />
+        <attr name="activeTextColor" format="color" />
+        <attr name="activeDrawable" format="reference" />
+
+        <attr name="inactiveText" format="string" />
+        <attr name="inactiveTextColor" format="color" />
+        <attr name="inactiveDrawable" format="reference" />
+
+        <attr name="switchFontFamily" format="reference" />
+        <attr name="android:checked" />
+        <!-- endregion -->
+    </declare-styleable>
+
+    <declare-styleable name="WeldProgressBar">
+        <attr name="innerProgressMax" format="integer" />
+        <attr name="innerProgressDefault" format="integer" />
+        <attr name="externalProgressMax" format="integer" />
+        <attr name="externalProgressDefault" format="integer" />
+        <attr name="colorInnerProgress" format="color" />
+        <attr name="colorLineProgress" format="color" />
+        <attr name="colorSolidProgress" format="color" />
+        <attr name="colorExternalProgress" format="color" />
+        <attr name="colorStartShadow" format="color" />
+        <attr name="colorEndShadow" format="color" />
+        <attr name="colorBackground" format="color" />
+        <attr name="anomaly" format="integer" />
+        <attr name="axis_signatures" format="boolean" />
+        <attr name="axis_textSize" format="dimension" />
+        <attr name="axis_fontface" format="reference" />
+        <attr name="axis_textColor" format="color" />
+        <attr name="extraDataEnabled" format="boolean" />
+        <attr name="extraDataValue" format="string" />
+        <attr name="extraDataLabel" format="string" />
+        <attr name="extraDataValueTextSize" format="dimension" />
+        <attr name="extraDataLabelTextSize" format="dimension" />
+        <attr name="extraColor" format="color" />
+        <attr name="extraFontFamily" format="reference" />
+        <attr name="typeProgress" format="enum">
+            <enum name="defaultProgress" value="0" />
+            <enum name="innerProgress" value="1" />
+            <enum name="externalProgress" value="2" />
+            <enum name="singleExternalProgressDefault" value="3" />
+            <enum name="singleInnerProgressDefault" value="4" />
+            <enum name="singleExternalProgress" value="5" />
+            <enum name="singleExternalProgressWithAnomaly" value="6" />
+            <enum name="trackingIndicators" value="7" />
+            <enum name="upslope" value="8" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="RoundBackground">
+        <attr name="colorProgressBackground" format="color" />
+        <attr name="startShadowColor" format="color" />
+        <attr name="endShadowColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularSeekBar">
+        <attr name="progress_bar" format="integer" />
+        <attr name="max_bar" format="integer" />
+        <attr name="negative_enabled" format="boolean" />
+        <attr name="touch_event_enabled" format="boolean" />
+        <attr name="move_outside_circle" format="boolean" />
+        <attr name="maintain_equal_circle" format="boolean" />
+        <attr name="use_custom_radii" format="boolean" />
+        <attr name="lock_enabled" format="boolean" />
+        <attr name="circle_x_radius" format="dimension" />
+        <attr name="circle_y_radius" format="dimension" />
+        <attr name="circle_stroke_width" format="dimension" />
+        <attr name="disable_pointer" format="boolean" />
+        <attr name="pointer_stroke_width" format="dimension" />
+        <attr name="pointer_halo_width" format="dimension" />
+        <attr name="pointer_halo_border_width" format="dimension" />
+        <attr name="circle_fill" format="color" />
+        <attr name="circle_color" format="color" />
+        <attr name="circle_progress_color" format="color" />
+        <attr name="pointer_color" format="color" />
+        <attr name="pointer_halo_color" format="color" />
+        <attr name="pointer_halo_color_ontouch" format="color" />
+        <attr name="pointer_alpha_ontouch" format="integer" />
+        <attr name="pointer_angle" format="float" />
+        <attr name="start_angle" format="float" />
+        <attr name="end_angle" format="float" />
+        <attr name="disable_progress_glow" format="boolean" />
+        <attr name="hide_progress_when_empty" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="line_count" format="integer|reference" />
+        <attr name="line_width" format="dimension|reference" />
+        <attr name="progress_start_color" format="color|reference" />
+        <attr name="progress_end_color" format="color|reference" />
+        <attr name="progress_text_color" format="color|reference" />
+        <attr name="progress_text_size" format="dimension|reference" />
+        <attr name="progress_stroke_width" format="dimension|reference" />
+        <attr name="progress_background_color" format="color|reference" />
+        <attr name="progress_start_degree" format="integer|reference" />
+        <attr name="drawBackgroundOutsideProgress" format="boolean|reference" />
+
+        <attr name="style">
+            <enum name="line" value="0" />
+            <enum name="solid" value="1" />
+            <enum name="solid_line" value="2" />
+            <enum name="text" value="3" />
+            <enum name="single_line" value="4" />
+        </attr>
+
+        <attr name="progress_shader">
+            <enum name="linear" value="0" />
+            <enum name="radial" value="1" />
+            <enum name="sweep" value="2" />
+        </attr>
+
+        <attr name="progress_stroke_cap">
+            <enum name="butt" value="0" />
+            <enum name="round" value="1" />
+            <enum name="square" value="2" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="ParameterView">
+        <attr name="textField" format="string" />
+        <attr name="valueField" format="string" />
+        <attr name="colorTextField" format="color" />
+        <attr name="colorValueField" format="color" />
+        <attr name="sizeTextField" format="dimension" />
+        <attr name="sizeValueField" format="dimension" />
+        <attr name="textAllCaps" format="boolean" />
+        <attr name="paddingValueField" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchView">
+
+    </declare-styleable>
+
+    <declare-styleable name="SegmentedControlView">
+        <attr name="segRadius" format="dimension|reference" />
+        <attr name="segOuterColor" format="color" />
+        <attr name="segItemColor" format="color" />
+        <attr name="segTextColor" format="color" />
+        <attr name="segSelectedTextColor" format="color" />
+        <attr name="segMarginLeft" format="dimension|reference" />
+        <attr name="segMarginTop" format="dimension|reference" />
+        <attr name="segSelectedItem" format="integer" />
+        <attr name="segTextSize" format="reference" />
+        <attr name="segScrollEnable" format="boolean" />
+        <attr name="setTextTypeface" format="reference" />
+        <attr name="segMode">
+            <enum name="round" value="0" />
+            <enum name="circle" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

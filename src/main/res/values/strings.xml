@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">UIView</string>
+    <string name="default_level_text_format">LEVEL %1$d</string>
+</resources>
